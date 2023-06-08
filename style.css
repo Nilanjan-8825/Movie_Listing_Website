@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header .website_name{
+    text-align: center ;
+    justify-content: center ;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 50px;
+    font-weight: 800;
+}
+.header{
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: url('./Assets/images/background.png');
+}
+.nav-bar li img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.nav-bar{
+    width: 100px;
+    position:fixed;
+    height: 100%;
+    top:80px;
+    left:0;
+    padding: 15px 15px;
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: (5px);
+    transition: width 0.5s;
+}
+.nav-bar .user{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:50px;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+.nav-bar .user div{
+    display: none;
+}
+.nav-bar .user>img{
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: auto;
+}
+.nav-bar .user_details {
+    font-size: 15px;
+    font-weight: 800;
+}
+.nav-bar ul{
+    list-style: none;
+    padding: 0 15px;
+}
+.nav-bar ul li{
+    margin: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.nav-bar ul li p{
+    margin:5px;
+    display: none;
+    white-space: nowrap;
+}
+.nav-bar:hover{
+    width:250px;
+    
+}
+.nav-bar:hover .user div{
+    display: block;
+}
+.nav-bar:hover .user{
+    width:100%;
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: (5px);
+}
+.nav-bar:hover .user>img{
+
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.nav-bar:hover .user_details{
+    margin-left: 0;
+}
+.nav-bar:hover ul li p{
+    display: block;
+    margin-left: 10px;
+}
+.nav-bar:hover ul li{
+    justify-content: flex-start;
+}
