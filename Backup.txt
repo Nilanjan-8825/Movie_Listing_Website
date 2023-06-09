@@ -20,28 +20,28 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Sign in</a>
+                    <a class="nav-link" href="#">Link</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Movie Genre
+                      Dropdown
                     </a>
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Science Fiction</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
                       <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Suspense Thriller</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link disabled">Disabled</a>
                   </li>
                 </ul>
-                <form class="d-flex" role="search" id="form">
-                  <input class="form-control me-2" id="search" type="search" placeholder="Search" aria-label="Search">
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                   <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
               </div>
@@ -49,9 +49,7 @@
           </nav>
     </div>
     <div class="header">
-      <h1 class="website_name">Movie Destination</h1>
-      <div class="movie_temp" id="movie_temp">
-      </div>
+        <h1 class="website_name">Movie Destination</h1>
         <div class="nav-bar">
             <div class="user">
                 <img src="./Assets/images/Guest.jpeg" alt="blank_photo">
@@ -71,8 +69,56 @@
                 <li><img  src="./Assets/images/logout.png" alt="logout"><p>Logout</p></li>
             </ul>
         </div>
+        <div class="movie_temp">
+          <div class="movie_name">
+            <img src="./Assets/images/Poster1.jpg" alt="Spider Man: Into the Spiderverse">
+            <div class="movie_info">
+              <h3 class="Movie_title">Spiderman:Into THe Spiderverse</h3>
+              <div class="rating red">
+                <a>IMDB :</a>
+                <span>8</span>
+              </div>
+              <div class="summary">
+                  <div class="Overview">
+                    <h3>Overview</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis nam a minima quis voluptatum temporibus nulla nemo dolorem eaque. Odit distinctio accusamus iusto! Dolorem maxime quasi temporibus veniam. Aperiam, praesentium.</p>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="movie_name">
+            <img src="./Assets/images/Poster1.jpg" alt="Spider Man: Into the Spiderverse">
+            <div class="movie_info">
+              <h3 class="Movie_title">Spiderman:Into THe Spiderverse</h3>
+              <div class="rating green">
+                <a>IMDB :</a>
+                <span>8</span>
+              </div>
+              <div class="summary">
+                  <div class="Overview">
+                    <h3>Overview</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis nam a minima quis voluptatum temporibus nulla nemo dolorem eaque. Odit distinctio accusamus iusto! Dolorem maxime quasi temporibus veniam. Aperiam, praesentium.</p>
+                  </div>
+                </div>
+            </div>
+          </div>          <div class="movie_name">
+            <img src="./Assets/images/Poster1.jpg" alt="Spider Man: Into the Spiderverse">
+            <div class="movie_info">
+              <h3 class="Movie_title">Spiderman:Into THe Spiderverse</h3>
+              <div class="rating yellow">
+                <a>IMDB :</a>
+                <span>8</span>
+              </div>
+              <div class="summary">
+                  <div class="Overview">
+                    <h3>Overview</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis nam a minima quis voluptatum temporibus nulla nemo dolorem eaque. Odit distinctio accusamus iusto! Dolorem maxime quasi temporibus veniam. Aperiam, praesentium.</p>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>    
-    <script src="index.js"></script>
 </body>
 </html>
