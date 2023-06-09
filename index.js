@@ -5,8 +5,8 @@ const form=document.getElementById('form')
 const search=document.getElementById('search')
 const main=document.getElementById('movie_temp')
 // Get Movies
-getMovies(API_URL)
-async function getMovies (url){ 
+FetchMovies(API_URL)
+async function FetchMovies (url){ 
 const res= await fetch(url)
 const data=await res.json()
 showmovie(data.results)
@@ -22,7 +22,7 @@ function showmovie(movies){
         <img src="${IMAGE_PATH+poster_path}" alt="${title}" />
         <div class='movie_info'>
             <h3 class='Movie_title'>${title}</h3>
-            <div class='rating ${GiveRating(vote_average)}'>
+            <div class='rating ${AssignRating(vote_average)}'>
                 <a>IMDB :</a>
                 <span> ${vote_average}</span>
             </div>
@@ -33,11 +33,12 @@ function showmovie(movies){
                 </div>
             </div>
         </div>
+        
         `;
         main.appendChild(moviesElement)
         })
 }
-function GiveRating(rating){
+function AssignRating(rating){
     if(rating<4)return 'red';
     else if(rating<7) return 'yellow';
     else return 'green';
@@ -46,7 +47,7 @@ form.addEventListener('submit', (e)=>{
     e.preventDefault()
     let searchValue=search.value
     if(searchValue && searchValue !==''){ 
-    getMovies (SEARCH_URL+searchValue)
+    FetchMovies (SEARCH_URL+searchValue)
     searchValue=''
     }
     else{
